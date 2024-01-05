@@ -4,3 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* Initial style for the body */ 
+body {
+    background-color: black;
+    color: white;
+}

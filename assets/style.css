@@ -8,11 +8,27 @@
 /* Initial style for the body */ 
 body {
     background-color: black;
-    color: white;
+    color: black;
 }
 
 .container {
     width: 100%;
     height: 100vh;
     background-color: #101010;
+}
+
+.clock {
+    height: 33%;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

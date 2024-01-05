@@ -5,9 +5,14 @@
     box-sizing: border-box;
 }
 
-
 /* Initial style for the body */ 
 body {
     background-color: black;
     color: white;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #101010;
 }

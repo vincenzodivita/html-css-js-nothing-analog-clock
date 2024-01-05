@@ -5,10 +5,17 @@
     box-sizing: border-box;
 }
 
+/* Flex class*/
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Initial style for the body */ 
 body {
     background-color: black;
-    color: black;
+    /* color: black; */
 }
 
 .container {
@@ -22,13 +29,15 @@ body {
     aspect-ratio: 1/1;
     background-color: white;
     border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
 }
 
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.seconds {
+    height: 5%;
+    aspect-ratio: 1/1;
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    top:0;
+    left: 50%;
 }

@@ -14,6 +14,14 @@ body {
     --bg-color: #101010;   
 }
 
+/* Layout */
+body {
+    --clock-height: calc(100vh / 3);
+    --seconds-hand-height: calc(var(--clock-height) / 20);
+    --minute-hand-radius: calc(var(--seconds-hand-height) / 2);
+    --hours-hand-height: calc(var(--seconds-hand-height) * 3 );
+}
+
 /* Flex class*/
 .flex {
     display: flex;
@@ -34,7 +42,7 @@ body {
 
 /* Clock Style */
 .clock {
-    height: 33%;
+    height: var(--clock-height);
     aspect-ratio: 1/1;
     background-color: var(--tertiary-color);
     border-radius: 50%;
@@ -42,11 +50,16 @@ body {
 }
 
 .seconds,
-.minute,
+.minutes,
 .hours {
     height: 100%;
     width: 100%;
     position: absolute;
+    z-index: 1;
+}
+
+.minutes {
+    z-index: 2;
 }
 
 .hand {
@@ -56,31 +69,34 @@ body {
 }
 
 .seconds .hand{
-    height: 5%;
+    height: var(--seconds-hand-height);
     aspect-ratio: 1/1;
     background-color: var(--detail-color);
-    border-radius: 50%;
+    border-radius: var(--minute-hand-radius);
     top:0;
     transform: translate(-50%, 0);
-    z-index: 3;
 }
 
 .minutes .hand{
-    height: 5%;
+    height: var(--seconds-hand-height);
     width: 42%;
     background-color: var(--secondary-color);
+    border-radius: var(--minute-hand-radius);
     transform: translate(0, -50%);
-    z-index: 2;
 }
 
 .hours .hand{
-    height: 20%;
+    height: var(--hours-hand-height);
     width:35%;
+    border-radius: calc(var(--hours-hand-height) / 2);
     background-color: var(--primary-color);
     transform: translate(-20%, -50%);
-    z-index: 1;
 }
 
-.seconds {
-    transform: rotate(90deg);
+/* Initial position*/
+
+.minutes,
+.hours {
+    transform: rotate(-90deg);
 }
+

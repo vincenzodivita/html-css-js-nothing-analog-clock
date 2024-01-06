@@ -73,8 +73,8 @@ body {
     aspect-ratio: 1/1;
     background-color: var(--detail-color);
     border-radius: var(--minute-hand-radius);
-    top:0;
-    transform: translate(-50%, 0);
+    left:100%;
+    transform: translate(-100%, -50%);
 }
 
 .minutes .hand{
@@ -93,10 +93,28 @@ body {
     transform: translate(-20%, -50%);
 }
 
-/* Initial position*/
+/* Animations */
 
-.minutes,
-.hours {
-    transform: rotate(-90deg);
+ body {
+    --total-duration: 120s;
+    --seconds-duration: calc(var(--minutes-duration) / 6); 
+    --minutes-duration: calc(var(--hours-duration) / 6);
+    --hours-duration: calc(var(--total-duration)* 2.4);
 }
 
+.seconds {
+    animation: rotate var(--seconds-duration) linear infinite;
+}
+
+.minutes {
+    animation: rotate var(--minutes-duration) linear infinite;
+}
+
+.hours {
+    animation: rotate var(--hours-duration) linear infinite;
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+} 

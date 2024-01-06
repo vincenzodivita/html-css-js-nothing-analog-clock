@@ -18,8 +18,9 @@ body {
 body {
     --clock-height: calc(100vh / 3);
     --seconds-hand-height: calc(var(--clock-height) / 20);
+    --minutes-hand-height: calc(var(--seconds-hand-height) * 0.9 );
+    --hours-hand-height: calc(var(--seconds-hand-height) * 2.3 );
     --minute-hand-radius: calc(var(--seconds-hand-height) / 2);
-    --hours-hand-height: calc(var(--seconds-hand-height) * 3 );
 }
 
 /* Flex class*/
@@ -73,13 +74,13 @@ body {
     aspect-ratio: 1/1;
     background-color: var(--detail-color);
     border-radius: var(--minute-hand-radius);
-    left:100%;
+    left:98%;
     transform: translate(-100%, -50%);
 }
 
 #minutes .hand{
-    height: var(--seconds-hand-height);
-    width: 42%;
+    height: var(--minutes-hand-height);
+    width: 38%;
     background-color: var(--secondary-color);
     border-radius: var(--minute-hand-radius);
     transform: translate(0, -50%);

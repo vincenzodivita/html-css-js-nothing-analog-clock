@@ -5,6 +5,15 @@
     box-sizing: border-box;
 }
 
+/* Color palette */
+body {
+    --detail-color: #C5322D;
+    --primary-color: #F1F1F1; 
+    --secondary-color: #888888;
+    --tertiary-color:  #1B1B1B;
+    --bg-color: #101010;   
+}
+
 /* Flex class*/
 .flex {
     display: flex;
@@ -14,20 +23,20 @@
 
 /* Initial style for the body */ 
 body {
-    background-color: black;
+    background-color: var(--bg-color);
 }
 
 .container {
     width: 100%;
     height: 100vh;
-    background-color: #101010;
+    background-color: var(--bg-color);
 }
 
 /* Clock Style */
 .clock {
     height: 33%;
     aspect-ratio: 1/1;
-    background-color: white;
+    background-color: var(--tertiary-color);
     border-radius: 50%;
     position: relative;
 }
@@ -40,14 +49,18 @@ body {
     position: absolute;
 }
 
+.hand {
+    position: absolute;
+    top:50%;
+    left:50%;
+}
+
 .seconds .hand{
     height: 5%;
     aspect-ratio: 1/1;
-    background-color: red;
+    background-color: var(--detail-color);
     border-radius: 50%;
-    position: absolute;
     top:0;
-    left: 50%;
     transform: translate(-50%, 0);
     z-index: 3;
 }
@@ -55,10 +68,7 @@ body {
 .minutes .hand{
     height: 5%;
     width: 42%;
-    background-color: green;
-    position: absolute;
-    top:50%;
-    left: 50%;
+    background-color: var(--secondary-color);
     transform: translate(0, -50%);
     z-index: 2;
 }
@@ -66,11 +76,11 @@ body {
 .hours .hand{
     height: 20%;
     width:35%;
-    background-color: blue;
-    position: absolute;
-    top:50%;
-    left: 50%;
+    background-color: var(--primary-color);
     transform: translate(-20%, -50%);
     z-index: 1;
 }
 
+.seconds {
+    transform: rotate(90deg);
+}

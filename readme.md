@@ -2,7 +2,7 @@
 
 This is a clone of the Nothing OS widget.
 
-<div style="width: 100px; height: 50px; background-color: purple; border-radius: 10px; text-align: center; padding: 10px;">
+<div style="width: 100px; height: 50px; background-color: #ffffff; border-radius: 10px; text-align: center; padding: 10px;">
   <a href="URL_DEL_TUO_SITO" style="color: white; text-decoration: none; font-weight: bold;">Preview del Sito</a>
 </div>
 

@@ -17,5 +17,5 @@ The style of the clock is taken from the minimalist Nothing OS widget
 
 ## Authors
 
+<img src="https://github.com/vincenzodivita/avatar/blob/main/Avatar%20boolean.png?raw=true" alt="Vincenzo's Profile Image" width="30" height="30">
 [Vincenzo Di Vita](https://github.com/vincenzodivita)
-<img src="https://github.com/vincenzodivita/avatar/blob/main/Avatar%20boolean.png?raw=true" alt="Vincenzo's Profile Image" width="20" height="20">

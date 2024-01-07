@@ -7,15 +7,19 @@ This is a clone of the Nothing OS widget.
 This repository contains an analog clock written in HTML, CSS and JS.
 The style of the clock is taken from the minimalist Nothing OS widget 
 
-<a 
+<!-- <a 
         href="https://vincenzodivita.github.io/html-css-js-nothing-analog-clock/" 
         target="_blank" rel="noreferrer">
         <img 
             src="https://github.com/vincenzodivita/button/blob/main/button.png?raw=true"
             alt="preview" height="40"
         /> 
-<img src="" alt="Vincenzo's Profile Image" width="20" height="20">
 
+        <
+<img src="" alt="Vincenzo's Profile Image" width="20" height="20"> -->
+<div style="width: 100px; height: 50px; border: 10px solid white;">
+test
+</div>
 ## Getting Started
 
 ### Installing

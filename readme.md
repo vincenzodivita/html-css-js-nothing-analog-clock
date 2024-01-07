@@ -18,4 +18,4 @@ The style of the clock is taken from the minimalist Nothing OS widget
 ## Authors
 
 [Vincenzo Di Vita](https://github.com/vincenzodivita)
-![Vincenzo's Profile Image](https://github.com/vincenzodivita/avatar/blob/main/Avatar%20boolean.png)
+![Vincenzo's Profile Image](https://github.com/vincenzodivita/avatar/blob/main/Avatar%20boolean.png?raw=true)
